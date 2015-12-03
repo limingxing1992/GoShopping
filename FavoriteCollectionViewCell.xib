@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Favorite" id="gTV-IL-0wX" customClass="FavoriteCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ni4-JE-uq4">
+                        <rect key="frame" x="2" y="2" width="176" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="ye9-dj-UK4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4al-MV-Yqf">
+                        <rect key="frame" x="2" y="152" width="176" height="43"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.88706318699999998" green="0.8675262171" blue="0.87173821110000005" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ni4-JE-uq4" secondAttribute="trailing" constant="2" id="1LW-eZ-7Gt"/>
+                <constraint firstAttribute="trailing" secondItem="4al-MV-Yqf" secondAttribute="trailing" constant="2" id="1nb-2j-2HJ"/>
+                <constraint firstAttribute="bottom" secondItem="4al-MV-Yqf" secondAttribute="bottom" constant="5" id="aoI-33-k1W"/>
+                <constraint firstItem="4al-MV-Yqf" firstAttribute="top" secondItem="ni4-JE-uq4" secondAttribute="bottom" id="ml9-0X-ukV"/>
+                <constraint firstItem="4al-MV-Yqf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="qeg-fX-8g2"/>
+                <constraint firstItem="ni4-JE-uq4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="xCe-j5-xvr"/>
+                <constraint firstItem="ni4-JE-uq4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="xpK-Ih-kbq"/>
+            </constraints>
+            <size key="customSize" width="229" height="170"/>
+            <connections>
+                <outlet property="iv" destination="ni4-JE-uq4" id="SiF-R4-hze"/>
+                <outlet property="title_lable" destination="4al-MV-Yqf" id="r4b-cM-8CC"/>
+            </connections>
+            <point key="canvasLocation" x="304.5" y="283"/>
+        </collectionViewCell>
+    </objects>
+</document>
